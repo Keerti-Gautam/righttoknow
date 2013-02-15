@@ -61,7 +61,7 @@ then you can ask the Information Commissioner to review the decision or make a c
 Information Commissioner, either
 <% if !@info_request.nil? %>
     include a link to your request 
-    <strong><%=h main_url(request_url(@info_request)) %></strong>
+    <strong><%=h request_url(@info_request) %></strong>
 <% else %>
     include a link to your request on <%= site_name %>
 <% end %>
